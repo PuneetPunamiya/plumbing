@@ -26,6 +26,8 @@ func ForKind(res *parser.Resource) Validator {
 	switch res.Kind {
 	case "Task":
 		return NewTaskValidator(res)
+	case "Pipeline":
+		return NewPipelineValidator(res)
 	default:
 		return &noopValidator{kind: res.Kind}
 	}
