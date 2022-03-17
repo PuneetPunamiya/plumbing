@@ -1,0 +1,31 @@
+---
+apiVersion: tekton.dev/v1beta1
+kind: Task
+metadata:
+  name: ''
+  labels:
+    app.kubernetes.io/version: ''
+  annotations:
+    tekton.dev/pipelines.minVersion: ''
+    tekton.dev/tags: ''
+    tekton.dev/displayName: ''
+    tekton.dev/categories: ''
+spec:
+  description: ''
+
+  workspaces:
+    - name: '' # Name of the workspace
+      description: '' # Description of the workspace
+      optional: true # Optional value of the workspace
+
+  params:
+    - name: '' # Name of parms
+      description: '' # Description of the params
+      default: '' # Default value of the params
+
+  steps:
+    - name: '' # Name of steps
+      image: docker.io/library/node:12-alpine@sha256:12048cdfd75d944df35f3144132d9bdeee78015fbd6df765edad1be46599b110 # Name of the image to be used for the resource
+      script: | # Actions resource performs
+
+      args: [] # Arguments to execute

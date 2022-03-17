@@ -1,0 +1,22 @@
+apiVersion: tekton.dev/v1beta1
+kind: Task
+metadata:
+  annotations:
+    tekton.dev/categories: ""
+    tekton.dev/displayName: yoo
+    tekton.dev/pipelines.minVersion: ""
+    tekton.dev/tags: ""
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/version: ""
+  name: brpp
+spec:
+  params:
+  - default: ""
+    name: ""
+  steps:
+  - image: docker.io/library/node:12-alpine@sha256:12048cdfd75d944df35f3144132d9bdeee78015fbd6df765edad1be46599b110
+    name: ""
+    resources: {}
+  workspaces:
+  - name: ""

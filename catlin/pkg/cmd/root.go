@@ -18,6 +18,7 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/tektoncd/plumbing/catlin/pkg/app"
 	"github.com/tektoncd/plumbing/catlin/pkg/cmd/bump"
+	"github.com/tektoncd/plumbing/catlin/pkg/cmd/create"
 	"github.com/tektoncd/plumbing/catlin/pkg/cmd/linter"
 	"github.com/tektoncd/plumbing/catlin/pkg/cmd/validate"
 )
@@ -34,6 +35,7 @@ func Root(cli app.CLI) *cobra.Command {
 		validate.Command(cli),
 		linter.Command(cli),
 		bump.Command(cli),
+		create.Command(cli),
 	)
 
 	return cmd
